@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  font-family: 'Poppins';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  overflow-x: hidden;
+}
+body {
+  width:100%;
+}
+.font-poppins{
+  font-family: 'Poppins';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'metropolis-1920';
+  src: url('./fonts/Metropolis1920-Regular.otf');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.icon-box{
+  font-size: 30px;
+}
+
+.footer-icon{
+  height: 40px;
+}
+
+
+.custom-size{
+  max-width: 350px;
+  max-height: 350px;
+}
+
+
+
+
+.nav-logo{
+  font-family: 'metropolis-1920';
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+.special-hover{
+  color: transparent !important;
+  transition: .5s;
+}
+
+.icon-box:hover > .special-hover{
+  color: hsl(217, 71%, 53%) !important;
+  transition: .5s;
+}
+.custom-photo{
+  height: 250px;
+  width: auto;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.image-wrapper{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.image-stepper{
+  object-fit: cover;
+  max-height: 250px;
+  max-width: 250px;
 }
 
-.App-link {
-  color: #61dafb;
+.instagram-icon{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.github-icon{
+  color: #211f1f;
+}
+
+.telegram-icon{
+  color: #0088cc;
+}
+
+.linkedin-icon{
+  color: #0077b5;
+}
+
+/*
+scrollbar customization
+*/
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track{
+  background-color: rgb(150, 150, 150);
+}
+
+::-webkit-scrollbar-thumb{
+  background: white;
+  
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(173, 173, 173);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .custom-photo{
+    height: 200px;
+    width: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .image-stepper{
+    object-fit: cover;
+    max-height: 180px;
+    max-width: 180px;
   }
 }
